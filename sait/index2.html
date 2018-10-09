@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="Content-Type" content="text/html">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<script type="text/javascript" src="java.js"></script> 
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="fontawesome/css/fontawesome-all.css"></head>
+
+<body>
+<header class="header">
+	<div class="content">
+<div class="menu">
+ <div class="info">
+  <a href="index.html">
+  ИНФОРМАЦИЯ</a>
+  </div>
+    <div class="foto">
+      <a href="index7.html">
+      ФОТО И ВИДЕО</a>
+  </div>
+    <div class="logo">
+
+      <img src="img/14.png" alt="" />
+     </div>
+     <div class="karta">
+      <a href="index6.html">
+     КАРТА ШТАТА</a>
+     </div>
+     <div class="gost">
+      <a href="index2.html">
+      ГОСТИНИЦЫ</a>
+	   </div>
+</div>
+
+ <div class ="sortirivka"> 
+<div class="banner1">
+
+ <div class = "sort-infa">
+	<div class="slova">
+    ИНФРАСТРУКТУРА:
+    <div class="chek">
+    
+<label>
+   <input class="checkbox" type="checkbox" name="checkbox-test" checked hidden>
+   <span class="checkbox-custom" ></span>
+   <span class="label">БАССЕЙН</span>
+</label>
+
+<label>
+   <input class="checkbox" type="checkbox" name="checkbox-test"checked hidden>
+   <span class="checkbox-custom"></span>
+   <span class="label">ПАРКОВКА</span>
+</label>
+<label>
+   <input class="checkbox" type="checkbox" name="checkbox-test"checked hidden>
+   <span class="checkbox-custom"></span>
+   <span class="label">WI-FI</span>
+</label>
+</div>
+</div>
+    <div class="sort-dom">
+    ТИП ЖИЛЬЯ:
+    <div class="chek">
+<label>
+   <input class="checkbox" type="checkbox" name="checkbox-test" value="categorya1" id="filter-categorya" checked hidden>
+   <span class="checkbox-custom"></span>
+   <span class="label">ГОСТИНИЦА</span>
+</label>
+<label>
+   <input class="checkbox" type="checkbox" name="checkbox-test"checked hidden>
+   <span class="checkbox-custom"></span>
+   <span class="label">МОТЕЛЬ</span>
+</label>
+<label>
+   <input class="checkbox" type="checkbox" name="checkbox-test"checked hidden>
+   <span class="checkbox-custom"></span>
+   <span class="label">АПАРТАМЕНТЫ</span>
+</label>
+</div>
+
+
+
+
+</div>
+<!--  <script>
+var countChecked = function() {
+ var n = $( 'input:checked' ).length;
+ $( 'div' ).text( n + ' НАЙДЕНО' );
+};
+countChecked();
+
+$( 'input[type=checkbox]' ).on( 'click', countChecked );
+
+
+
+ </script>  -->
+
+<script type="text/javascript">
+ var selectedItems = new Array();
+$("input[class='checkbox']:checked").each(function() {selectedItems.push($(this).val());});</script>
+<div class="sort-cena">
+    СТОИМОСТЬ В СУТКИ (Р):
+<!-- <div class="container">
+
+	   <span><input id="minCost2" от value="0" type="text"></span>
+
+	   <span>до</span><input id="maxCost2" value="3000" type="text"><span></span>
+
+	   <div id="slider"></div>
+	   <input type="range" min="0" max="3000" step="1" value="50"> 
+
+	</div> 
+ -->
+  
+   <script>
+   $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 3000,
+      values: [ 75, 3000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+  <div class="masonry">
+ <p>
+  <label for="amount">Price range:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p><div id="slider-range"></div>
+</div>
+
+ </div>
+</div>
+
+</div>
+</div>
+ 
+<div class ="poisk">
+	<div class="naideno">
+		НАЙДЕНО:3
+	</div>
+	
+	<div class="sort00">
+		СОРТИРОВКА:
+	</div>
+	<a class="wtf1" href="">
+  
+ПО ЦЕНЕ</a>
+
+	<a class="wtf2" href="">
+ПО ТИПУ
+	</a>
+	<a class="wtf3" href="">
+ПО РЕЙТИНГУ
+</a>
+	
+
+          <a href="#" class="triug1" >
+                                    </a>
+        <a href="#" class="triug2" >
+                                    </a>
+</div>
+
+<!-- GOSTINICI -->
+
+
+<div class="hotel">
+	<hr align="left" width="100%" size="1" color="#766357" /> 
+	<div class="hotel1">
+
+     <div class="amara">
+          <img src="img/15.jpg" alt="" >
+                                    </div>
+            
+             <div class="frend">
+             <a class="amara1">
+               AMARA RESORT & SPA
+                                    </a>
+              <div class="cena">
+             <div class="cena1">
+             	ГОСТИНИЦА
+             </div>
+           
+              <div class="cena2">
+                	ОТ 4000 Р.
+             </div> 
+                            </div>
+   <div class="knopka">
+
+  <a href="index3.html" class="btn"></a>
+ 
+  <a href="" class="btn1"></a>
+
+                            </div>
+                        </div>
+<div class="star">   
+             <div class="zvezda">
+             	<i class="fas fa-star"></i> 
+             	<i class="fas fa-star"></i>
+             	<i class="fas fa-star"></i>
+             	<i class="fas fa-star"></i>
+             	<i class="fas fa-star"></i>
+             	<div class="ser-blok">
+             	<div class="reiting">
+             		РЕЙТИНГ: 8,5
+             	</div>
+             </div>
+             </div>
+         </div>          
+  </div>
+  <hr align="left" width="100%" size="1" color="#766357" />
+<div class="hotel1">
+<div class="desert">
+	
+	          <img src="img/16.jpg" alt="" >
+                                      </div>
+                 <div class="frend">
+                 <a class="amara1">
+                   DESERT QUAIL INN
+                                      </a>
+               
+
+                <div class="cena">
+                <div class="cena1">
+                	МОТЕЛЬ
+             </div>   
+             
+                 <div class="cena2">
+                	ОТ 3000 Р.
+             </div> 
+
+                                  
+                                  </div>
+                  
+     <div class="knopka">                          
+  
+ 
+  <a href="index4.html" class="btn"></a>
+ 
+  <a href="" class="btn1"></a>
+                              </div>
+                               </div>
+ <div class="star">
+             <div class="zvezda">
+             	<i class="fas fa-star"></i> 
+             	<i class="fas fa-star"></i>
+             	<i class="fas fa-star"></i>
+             	<div class="ser-blok">
+             	<div class="reiting">
+             		РЕЙТИНГ: 8,9
+             	</div>
+             </div>
+             </div>
+         </div>
+                
+                           </div>
+ <hr align="left" width="100%" size="1" color="#766357" />
+<div class="hotel1">
+
+<div class="vila">
+	
+	         <img src="img/17.jpg" alt="" >
+	                                  </div>
+               <div class="frend">	          
+	          <a class="amara1">
+	          VILLAS  AT POCO DIABLO         
+	                                  </a>
+	         <div class="cena">
+
+	         <div class="cena1">
+	         АПАРТАМЕНТЫ
+             </div> 
+            
+              <div class="cena2">
+	         ОТ 2000 Р.
+             </div>  
+               
+            
+                                       </div>
+
+            <div class="knopka">
+
+  <a href="index5.html" class="btn"></a>
+  
+  <a href="" class="btn1"></a>
+	                                    </div>
+	                                     </div>
+
+<div class="star">
+                <div class="zvezda">
+             	<i class="fas fa-star"></i> 
+             	<i class="fas fa-star"></i>
+             </div>
+             	<div class="ser-blok">
+             	<div class="reiting">
+             		РЕЙТИНГ: 9,2
+             	</div>
+             </div>
+         </div>
+	                                 </div>
+	        <hr align="left" width="100%" size="1" color="#766357" />   
+</div>
+</div>
+
+
+
+
+<!-- FUTER -->
+	
+  <div class="footer">
+	<div class="teg">
+#VISITSEDONA
+</div>
+<div class="soc-icons">
+	<a href="" class="facebook"> 
+	<i class="fab fa-facebook"></i>
+      </a>
+	  <a href="#" class="twitter">
+	  <i class="fab fa-twitter"></i>
+	 </i>
+
+	  </a>
+	  <a href="#" class="youtube-square">
+	  <i class="fab fa-youtube-square"></i></i>
+	   </a>
+	   </div>
+	  <div class="academy">
+	   <div class="teg">
+WEBSITE BY</div> 
+<div class ="acdemy1"><img src="img/18.jpg">
+</div></div>
+
+
+</div>
+</header>
+
+
+	
+
+<!-- Проверка на подключение жеквери! -->
+	<!-- <script type="text/javascript">
+		if (window.jQuery) alert("JQery podklu4ena");
+		else alert ("JQery ne podklu4ena");
+	</script> -->
+</body></head>
+</html>
